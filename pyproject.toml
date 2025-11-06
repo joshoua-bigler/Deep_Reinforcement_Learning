@@ -1,0 +1,26 @@
+[project]
+name         = "rl_lib"
+description  = "Reinforcement Learning Library"
+authors      = [{name = "Joshoua Bigler"}]
+version      = "1.0.0"
+dependencies = [
+    "gymnasium[box2d]==1.1.1",
+    "gymnasium[other]==1.1.1",
+    "matplotlib==3.10.3",
+    "opencv-python==4.11.0.86",
+    "numpy==2.2.6",
+    "ipython==9.3.0",
+    "gymnasium[toy-text]==1.1.1",
+    "wandb==0.19.11",
+    "ipykernel>=6.29.5",
+    "jupyter>=1.1.1",
+    "stable-baselines3[extra]==2.6.0",
+    "swig==4.3.1",
+    "torch==2.7.1"
+]
+
+[tool.setuptools]
+package-dir  = { "" = "." }
+packages = { find = { include = ["rl_lib*"] } } 
+[tool.pytest.ini_options]
+testpaths = ["test"]

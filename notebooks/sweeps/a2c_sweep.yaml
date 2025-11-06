@@ -1,0 +1,15 @@
+learning_rate:
+  type: float
+  values: [7e-4, 1e-3, 2e-3]     # default: 7e-4
+n_steps:
+  type: int
+  values: [5, 10, 20]            # default: 5
+gamma:
+  type: float
+  values: [0.97, 0.99]           # default: 0.99
+gae_lambda:
+  type: float
+  values: [0.95, 1.0]            # default: 1.0
+ent_coef:
+  type: float
+  values: [0.0, 0.01]            # default: 0.0

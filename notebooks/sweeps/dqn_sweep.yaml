@@ -1,0 +1,21 @@
+learning_rate:
+  type: float
+  values: [1e-4, 5e-4, 1e-3]     # default: 1e-4
+batch_size:
+  type: int
+  values: [32, 64]               # default: 32
+gamma:
+  type: float
+  values: [0.97, 0.99]           # default: 0.99
+target_update_interval:
+  type: int
+  values: [5000, 10000]          # default: 10000
+exploration_fraction:
+  type: float
+  values: [0.1, 0.2]             # default: 0.1
+exploration_final_eps:
+  type: float
+  values: [0.01, 0.05]           # default: 0.05
+buffer_size:
+  type: int
+  values: [100000, 500000]       # default: 1000000

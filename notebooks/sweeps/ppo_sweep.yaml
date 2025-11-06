@@ -1,0 +1,24 @@
+learning_rate:
+  type: float
+  values: [2.5e-4, 5e-4, 1e-3]   # default: 3e-4
+n_steps:
+  type: int
+  values: [512, 1024, 2048]      # default: 2048
+batch_size:
+  type: int
+  values: [64, 128]              # default: 64
+n_epochs:
+  type: int
+  values: [4, 10]                # default: 10
+gamma:
+  type: float
+  values: [0.97, 0.99]           # default: 0.99
+gae_lambda:
+  type: float
+  values: [0.9, 0.95]            # default: 0.95
+clip_range:
+  type: float
+  values: [0.1, 0.2]             # default: 0.2
+ent_coef:
+  type: float
+  values: [0.0, 0.01]            # default: 0.0
